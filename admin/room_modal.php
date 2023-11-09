@@ -70,7 +70,7 @@
 								while($umrow=mysqli_fetch_array($um)){
 									$mem[]=$umrow['userid'];
 								}
-								$users=implode($mem, "', '");
+								$users = implode("', '", $mem);
 								
 								$u=mysqli_query($conn,"select * from `user` where userid not in ('".$users."')");
 								if(mysqli_num_rows($u)<1){
