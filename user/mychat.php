@@ -8,7 +8,7 @@
 		<div class="panel-body">
 		<table width="100%" class="table table-striped table-bordered table-hover" id="myChatRoom">
 			<thead>
-			<th>Chat Room Name</th>
+			<th>Nama Ruang Chat</th>
 			<th></th>
 			</thead>
 			<tbody>
@@ -24,12 +24,12 @@
 									$memb=mysqli_query($conn,"select * from chatroom where userid='".$_SESSION['id']."' and chatroomid='".$myrow['chatroomid']."'");
 									if (mysqli_num_rows($memb)>0){
 										?>
-										<button type="button" class="btn btn-danger btn-sm delete2" value="<?php echo $myrow['chatroomid']; ?>">Delete</button>
+										<button type="button" class="btn btn-danger btn-sm delete2" value="<?php echo $myrow['chatroomid']; ?>">Hapus</button>
 										<?php
 									}
 									else{
 										?>
-										<button type="button" class="btn btn-warning btn-sm leave2" value="<?php echo $myrow['chatroomid']; ?>">Leave</button>
+										<button type="button" class="btn btn-warning btn-sm leave2" value="<?php echo $myrow['chatroomid']; ?>">Keluar</button>
 										<?php
 									}
 								?>

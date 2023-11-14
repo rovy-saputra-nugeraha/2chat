@@ -6,7 +6,7 @@
 	if (empty($user)){
 	?>
 		<script>
-			window.alert('Please select user');
+			window.alert('Pilih Pengguna');
 			window.history.back();
 		</script>
 	<?php
@@ -16,7 +16,7 @@
 	
 	?>
 		<script>
-			window.alert('Member Added Successfully');
+			window.alert('Anggota Berhasil Ditambahkan');
 			window.history.back();
 		</script>
 	<?php

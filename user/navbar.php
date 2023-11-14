@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="https://code-projects.org/">Code-Projects || Simple Chat System</a>
+			<a class="navbar-brand" href="https://code-projects.org/">Sistem Terditribusi || Chat System</a>
 		</div>
 
 		<ul class="nav navbar-nav">
@@ -13,7 +13,7 @@
 			<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-						<li><a href="#photo" data-toggle="modal"><span class="glyphicon glyphicon-picture"></span> Update Photo</a></li>
+						<li><a href="#photo" data-toggle="modal"><span class="glyphicon glyphicon-picture"></span> Update Foto</a></li>
 						<li class="divider"></li>
                         <li><a href="#logout" data-toggle="modal"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     </ul>

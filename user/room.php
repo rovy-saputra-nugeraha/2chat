@@ -34,14 +34,14 @@
 						if ($chatrow['userid']==$_SESSION['id']){
 							?>
 							<a href="index.php" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Lobby</a>
-							<a href="#delete_room" data-toggle="modal" class="btn btn-danger">Delete Room</a>
-							<a href="#add_member" data-toggle="modal" class="btn btn-primary">Add Member</a>
+							<a href="#delete_room" data-toggle="modal" class="btn btn-danger">Hapus Room</a>
+							<a href="#add_member" data-toggle="modal" class="btn btn-primary">Tambahkan Anggota</a>
 							<?php
 						}
 						else{
 							?>
 							<a href="index.php" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Lobby</a>
-							<a href="#leave_room" data-toggle="modal" class="btn btn-warning">Leave Room</a>
+							<a href="#leave_room" data-toggle="modal" class="btn btn-warning">Keluar Room</a>
 							<?php
 						}
 					?>
@@ -51,7 +51,7 @@
 				<div class="panel panel-default" style="height: 400px;">
 					<div style="height:10px;"></div>
 					<span style="margin-left:10px;">Welcome to Chatroom</span><br>
-					<span style="font-size:10px; margin-left:10px;"><i>Note: Avoid using foul language and hate speech to avoid banning of account</i></span>
+					<span style="font-size:10px; margin-left:10px;"><i>Catatan: Hindari penggunaan bahasa kotor dan ujaran kebencian untuk menghindari pemblokiran akun</i></span>
 					<div style="height:10px;"></div>
 					<div id="chat_area" style="margin-left:10px; max-height:320px; overflow-y:scroll;">
 					</div>
@@ -61,7 +61,7 @@
 					<input type="text" class="form-control" placeholder="Type message..." id="chat_msg">
 					<span class="input-group-btn">
 					<button class="btn btn-success" type="submit" id="send_msg" value="<?php echo $id; ?>">
-					<span class="glyphicon glyphicon-comment"></span> Send
+					<span class="glyphicon glyphicon-comment"></span> Kirim
 					</button>
 					</span>
 				</div>

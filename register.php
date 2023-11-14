@@ -12,7 +12,7 @@
 		$username=check_input($_POST['username']);
 		
 		if (!preg_match("/^[a-zA-Z0-9_]*$/",$username)) {
-			$_SESSION['sign_msg'] = "Username should not contain space and special characters!"; 
+			$_SESSION['sign_msg'] = "Nama pengguna tidak boleh mengandung spasi dan karakter khusus!"; 
 			header('location: signup.php');
 		}
 		else{
@@ -25,7 +25,7 @@
 		
 		mysqli_query($conn,"insert into `user` (uname, username, password, access) values ('$fname', '$fusername', '$fpassword', '2')");
 		
-		$_SESSION['msg'] = "Sign up successful. You may login now!"; 
+		$_SESSION['msg'] = "Pendaftaran berhasil. Anda dapat login sekarang!"; 
 		header('location: index.php');
 		}
 	}

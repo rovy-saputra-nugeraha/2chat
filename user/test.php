@@ -7,7 +7,7 @@
 									$mem[]=$umrow['userid'];
 								}
 								print_r($mem);
-								$users=implode($mem, "', '");
+								$users = implode("', '", $mem);
 								echo $users;
 								print_r($users);
 								

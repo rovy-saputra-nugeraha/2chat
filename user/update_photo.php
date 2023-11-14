@@ -7,7 +7,7 @@
 		$location=$srow['photo'];
 		?>
 			<script>
-				window.alert('Uploaded photo is empty!');
+				window.alert('Foto yang diunggah kosong!');
 				window.history.back();
 			</script>
 		<?php
@@ -22,7 +22,7 @@
 	
 			?>
 				<script>
-					window.alert('Photo updated successfully!');
+					window.alert('Foto berhasil diperbarui!');
 					window.history.back();
 				</script>
 			<?php
@@ -30,7 +30,7 @@
 		else{
 			?>
 				<script>
-					window.alert('Photo not updated. Please upload JPG or PNG files only!');
+					window.alert('Foto tidak bisa diperbarui. Harap unggah file JPG atau PNG saja!');
 					window.history.back();
 				</script>
 			<?php
