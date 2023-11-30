@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2017 at 07:25 AM
--- Server version: 10.1.16-MariaDB
--- PHP Version: 5.6.24
+-- Waktu pembuatan: 30 Nov 2023 pada 15.44
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -23,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `chat`
+-- Struktur dari tabel `chat`
 --
 
 CREATE TABLE `chat` (
@@ -32,12 +33,12 @@ CREATE TABLE `chat` (
   `chatroomid` int(11) NOT NULL,
   `message` varchar(200) NOT NULL,
   `chat_date` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `chatroom`
+-- Struktur dari tabel `chatroom`
 --
 
 CREATE TABLE `chatroom` (
@@ -46,42 +47,43 @@ CREATE TABLE `chatroom` (
   `date_created` datetime NOT NULL,
   `chat_password` varchar(30) NOT NULL,
   `userid` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `chatroom`
+-- Dumping data untuk tabel `chatroom`
 --
 
 INSERT INTO `chatroom` (`chatroomid`, `chat_name`, `date_created`, `chat_password`, `userid`) VALUES
-(1, 'My First Chat Room', '2017-09-11 13:20:18', 'leeann', 2),
-(2, 'Free Entrance :)', '2017-09-11 13:20:51', '', 3),
-(3, 'Admin Chat Room', '2017-09-11 13:21:24', '', 1);
+(2, 'Admin Chat Room', '2017-09-11 13:20:51', '', 3),
+(5, 'Project Sistem Terdistribusi', '2023-11-30 21:39:45', '123', 5),
+(6, 'Project Sistem Digital', '2023-11-30 21:41:10', 'sisdig123', 5);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `chat_member`
+-- Struktur dari tabel `chat_member`
 --
 
 CREATE TABLE `chat_member` (
   `chat_memberid` int(11) NOT NULL,
   `chatroomid` int(11) NOT NULL,
   `userid` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `chat_member`
+-- Dumping data untuk tabel `chat_member`
 --
 
 INSERT INTO `chat_member` (`chat_memberid`, `chatroomid`, `userid`) VALUES
-(1, 1, 2),
 (2, 2, 3),
-(3, 3, 1);
+(5, 5, 5),
+(6, 5, 6),
+(7, 6, 5);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -91,69 +93,73 @@ CREATE TABLE `user` (
   `uname` varchar(60) NOT NULL,
   `photo` varchar(200) NOT NULL,
   `access` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`userid`, `username`, `password`, `uname`, `photo`, `access`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Admin', '', 1),
-(2, 'lee', '7e0d7f8a5d96c24ffcc840f31bce72b2', 'lee', '', 2),
-(3, 'julyn', 'bf70c261981e1708530982d56d2e8e01', 'julyn', '', 2);
+(5, 'admin', '$2y$10$rE6Rk.YG561CofLVW3LnguXz/qbyvId8AcJgC2lF5VExd74GFHfDC', 'Admin Chat', '', 1),
+(6, 'Farel', '$2y$10$IxrupZAJB.xRTXhQPT0PwOp469adY/gau70p6WWMUzgcvQEoO8qty', 'Farel Putra Albana', '', 2);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `chat`
+-- Indeks untuk tabel `chat`
 --
 ALTER TABLE `chat`
   ADD PRIMARY KEY (`chatid`);
 
 --
--- Indexes for table `chatroom`
+-- Indeks untuk tabel `chatroom`
 --
 ALTER TABLE `chatroom`
   ADD PRIMARY KEY (`chatroomid`);
 
 --
--- Indexes for table `chat_member`
+-- Indeks untuk tabel `chat_member`
 --
 ALTER TABLE `chat_member`
   ADD PRIMARY KEY (`chat_memberid`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`userid`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `chat`
+-- AUTO_INCREMENT untuk tabel `chat`
 --
 ALTER TABLE `chat`
-  MODIFY `chatid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `chatid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
--- AUTO_INCREMENT for table `chatroom`
+-- AUTO_INCREMENT untuk tabel `chatroom`
 --
 ALTER TABLE `chatroom`
-  MODIFY `chatroomid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `chatroomid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
--- AUTO_INCREMENT for table `chat_member`
+-- AUTO_INCREMENT untuk tabel `chat_member`
 --
 ALTER TABLE `chat_member`
-  MODIFY `chat_memberid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `chat_memberid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

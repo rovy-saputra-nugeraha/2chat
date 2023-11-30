@@ -19,7 +19,7 @@
 					</div>
 					<div class="form-group input-group">
 						<span class="input-group-addon" style="width:150px;">Password:</span>
-						<input type="text" style="width:350px;" class="form-control" id="upassword" required>
+						<input type="password" style="width:350px;" class="form-control" id="upassword" required>
 					</div>
 					<div class="form-group input-group">
 						<span class="input-group-addon" style="width:150px;">Access:</span>
