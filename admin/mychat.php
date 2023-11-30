@@ -8,7 +8,7 @@
 		<div class="panel-body">
 		<table width="100%" class="table table-striped table-bordered table-hover" id="myChatRoom">
 			<thead>
-			<th>Chat Room Name</th>
+			<th>Nama Ruang Chat</th>
 			<th></th>
 			</thead>
 			<tbody>

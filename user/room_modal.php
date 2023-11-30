@@ -8,7 +8,7 @@
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Are you sure?</center></h3>
+					<h3><center>Apakah Kamu Yakin?</center></h3>
 					<span style="font-size: 11px;"><center><i>Catatan: Setelah Anda meninggalkan ruangan dan ingin kembali lagi, kata sandi diperlukan untuk ruangan yang terkunci.</i></center></span>
                 </div> 
 				</div>

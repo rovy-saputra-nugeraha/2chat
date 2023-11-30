@@ -52,7 +52,7 @@
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Are you sure?</center></h3>
+					<h3><center>Apakah Kamu Yakin?</center></h3>
                 </div> 
 				</div>
                 <div class="modal-footer">

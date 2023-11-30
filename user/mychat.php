@@ -4,7 +4,7 @@
 		$me=mysqli_query($conn,"select * from chat_member left join chatroom on chatroom.chatroomid=chat_member.chatroomid where chat_member.userid='".$_SESSION['id']."' order by chatroom.date_created desc");
 		$numme=mysqli_num_rows($me);
 	?>
-		<div class="panel-heading"><center><strong>My Chatrooms <span class="badge"><?php echo $numme; ?></span></strong></center></div>
+		<div class="panel-heading"><center><strong>Ruang Chat <span class="badge"><?php echo $numme; ?></span></strong></center></div>
 		<div class="panel-body">
 		<table width="100%" class="table table-striped table-bordered table-hover" id="myChatRoom">
 			<thead>

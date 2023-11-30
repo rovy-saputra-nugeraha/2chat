@@ -8,7 +8,7 @@
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Are you sure?</center></h3>
+					<h3><center>Apakah Kamu Yakin?</center></h3>
 					<span style="font-size: 11px;"><center><i>Note: Once you leave the room and you wanted to come back, password is needed for a locked room.</i></center></span>
                 </div> 
 				</div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Are you sure?</center></h3>
+					<h3><center>Apakah Kamu Yakin?</center></h3>
                 </div> 
 				</div>
                 <div class="modal-footer">

@@ -8,7 +8,7 @@
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Are you sure?</center></h3>
+					<h3><center>Apakah Kamu Yakin?</center></h3>
                 </div> 
 				</div>
                 <div class="modal-footer">
@@ -33,7 +33,7 @@
                 <div class="modal-body">
 				<div class="container-fluid">
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Chat Room Name:</span>
+						<span class="input-group-addon" style="width:150px;">Nama Ruang Chat:</span>
 						<input type="text" style="width:350px;" class="form-control" id="room_name">
 					</div>
 					<div class="form-group input-group">
@@ -66,7 +66,7 @@
 				<div class="container-fluid">
 				<form>
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Chat Room Name:</span>
+						<span class="input-group-addon" style="width:150px;">Nama Ruang Chat:</span>
 						<input type="text" style="width:350px;" class="form-control" id="chat_name" required>
 					</div>
 					<div class="form-group input-group">
