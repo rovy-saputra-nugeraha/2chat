@@ -46,7 +46,7 @@ Aplikasi ini adalah sistem chat terdistribusi yang menggunakan replikasi databas
 
 ## Instalasi
 1. **Server Side:**
-   - Clone repositori dari [GitHub](https://github.com/2chat).
+   - Clone repositori dari [GitHub](https://github.com/rovy-saputra-nugeraha/2chat.git).
    - Konfigurasi database dan lingkungan server sesuai petunjuk dalam dokumen instalasi.
    - Jalankan server aplikasi.
 
@@ -57,7 +57,7 @@ Aplikasi ini adalah sistem chat terdistribusi yang menggunakan replikasi databas
    - Kirim dan terima pesan secara real-time.
 
 ## Kontribusi
-Silakan berkontribusi pada proyek ini dengan membuat *pull request* di repositori [GitHub](https://github.com/2chat). Pastikan untuk mengikuti pedoman kontribusi yang tersedia di sana.
+Silakan berkontribusi pada proyek ini dengan membuat *pull request* di repositori [GitHub](https://github.com/rovy-saputra-nugeraha/2chat.git). Pastikan untuk mengikuti pedoman kontribusi yang tersedia di sana.
 
 ## Lisensi
 Aplikasi ini dilisensikan di bawah [lisensi MIT](LICENSE).
