@@ -1,5 +1,4 @@
-# Sistem Chat Dengan Replikasi Database
-# Server Client Chat Terdistribusi
+# Sistem Chat Dengan Replikasi Database dan Server Client Chat Terdistribusi
 
 ## Deskripsi Singkat
 Aplikasi ini adalah sistem chat terdistribusi yang menggunakan replikasi database untuk menjaga ketersediaan dan keandalan data. Basis dari aplikasi ini adalah sebuah website yang memungkinkan pengguna untuk berkomunikasi secara real-time melalui chat room.
@@ -21,10 +20,10 @@ Aplikasi ini adalah sistem chat terdistribusi yang menggunakan replikasi databas
 
 ## Persyaratan Sistem
 1. **Server Side:**
-   - Platform: Linux
-   - Database: MySQL atau MongoDB
-   - Web Server: Nginx atau Apache
-   - Bahasa Pemrograman: Node.js
+   - Platform: Windoows
+   - Database: MySQL
+   - Web Server: XAMPP
+   - Bahasa Pemrograman: CI
 
 2. **Client Side:**
    - Browser modern seperti Google Chrome, Mozilla Firefox, atau Safari.
@@ -47,7 +46,7 @@ Aplikasi ini adalah sistem chat terdistribusi yang menggunakan replikasi databas
 
 ## Instalasi
 1. **Server Side:**
-   - Clone repositori dari [GitHub](https://github.com/namarepo).
+   - Clone repositori dari [GitHub](https://github.com/2chat).
    - Konfigurasi database dan lingkungan server sesuai petunjuk dalam dokumen instalasi.
    - Jalankan server aplikasi.
 
@@ -58,7 +57,7 @@ Aplikasi ini adalah sistem chat terdistribusi yang menggunakan replikasi databas
    - Kirim dan terima pesan secara real-time.
 
 ## Kontribusi
-Silakan berkontribusi pada proyek ini dengan membuat *pull request* di repositori [GitHub](https://github.com/namarepo). Pastikan untuk mengikuti pedoman kontribusi yang tersedia di sana.
+Silakan berkontribusi pada proyek ini dengan membuat *pull request* di repositori [GitHub](https://github.com/2chat). Pastikan untuk mengikuti pedoman kontribusi yang tersedia di sana.
 
 ## Lisensi
 Aplikasi ini dilisensikan di bawah [lisensi MIT](LICENSE).
